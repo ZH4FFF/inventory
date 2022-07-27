@@ -184,7 +184,7 @@ if(isset($_SESSION["UID"])){
 
 <div id="main">
 <h1> WELCOME TO TNB INVENTORY SYSTEM , <i style="color:red;"><?php echo $_SESSION["UID"];?> </i><h1> 
- <h2>Hello world</h2>
+ 
 </div>
 <script>
 function myFunction() {
