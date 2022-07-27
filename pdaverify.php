@@ -2,7 +2,7 @@
 $nss=$_POST['NSS'];
 $tc56=$_POST['TC56'];
 $po=$_POST['PO'];
-$Invoice_No=$_POST['Invoice_No'];
+$Invoice_No=$_POST['INVOICE_NO'];
 $Type_Unit=$_POST['Type_Unit'];
 $ASSET_NO=$_POST['ASSET_NO'];
 $Part_NO=$_POST['PART_NO'];
@@ -85,7 +85,7 @@ if($conn->connect_error)
 }
 else 
 {
-	$queryinsert="Insert into data_pda(NSS,TC56,PO,Invoice_no,TYPE_UNIT,ASSET_NO,PART_NO,WARRANTY,STATE,STATION,METER_READER,STAFF_ID)
+	$queryinsert="Insert into data_pda(NSS,TC56,PO,INVOICE_NO,TYPE_UNIT,ASSET_NO,PART_NO,WARRANTY,STATE,STATION,METER_READER,STAFF_ID)
 	values('".$nss."', '".$tc56."','".$po."', '".$Invoice_No."','".$Type_Unit."','".$ASSET_NO."','".$Part_NO."','".$Warranty."','".$State."','".$Station."','".$Meter_Reader."','".$Staff_ID."')";
 
 if($conn->query($queryinsert)==TRUE)

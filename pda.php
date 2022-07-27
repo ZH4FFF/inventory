@@ -14,7 +14,7 @@ TC56 <input type="text" name="TC56">
 PO: <input type="text" name="PO">
 <br>
 <br>
-Invoice No: <input type="text" name="Invoice_No">
+Invoice No: <input type="text" name="INVOICE_NO">
 <br>
 <br>
 Type Unit: <input type="text" name="Type_Unit">
