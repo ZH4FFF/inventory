@@ -106,15 +106,22 @@ $result_count = mysqli_query(
 
 
 ?>
-<center><h2>Search </h2></center>
-    <center>
-        <form action="searchResult.php" method="post">
-            <input type="text" name="Search" required>
-            <br><br>
-            <button type="submit" name="Search">search</button>
-            <button type="button" class="backbtn" onclick="history.back();" value="Back">Back</button>
-        </form>
-    </center>
+<center>
+<h2> Search form </h2>
+<p> Please search your keywords: </p>
+
+<form name="searchResult.php" action="searchResult.php" method="POST">
+
+<br>
+
+<input type="text" name="find" size="50"  required>
+<br>
+<br>
+<input type="submit" name="search" value="Search">
+
+</form>
+
+</center>
 <div class="container" style="overflow-x:auto;">
   <div class="row">
   
