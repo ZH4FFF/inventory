@@ -105,7 +105,24 @@ $result_count = mysqli_query(
 
 
 
+
 ?>
+<center>
+<h2> Search form </h2>
+<p> Please search your Staff ID: </p>
+
+<form name="searchprt.php" action="searchprt.php" method="POST">
+
+<br>
+
+<input type="text" name="find" size="50" placeholder="Insert StaffID or name only "  required>
+<br>
+<br>
+<input type="submit" name="search" value="Search">
+
+</form>
+
+</center>
 <div class="container" style="overflow-x:auto;">
   <div class="row">
   
@@ -137,14 +154,14 @@ if ($result->num_rows > 0){
                 <td><?php echo$row['NSS'];?></td>
                 <td><?php echo$row['ZQ520'];?></td>
                 <td><?php echo$row['PO'];?></td>
-                <td><?php echo$row['Invoice No'];?></td>
-                <td><?php echo$row['Type Unit'];?></td>
-                <td><?php echo$row['Part No'];?></td>
+                <td><?php echo$row['Invoice_No'];?></td>
+                <td><?php echo$row['Type_Unit'];?></td>
+                <td><?php echo$row['Part_No'];?></td>
                 <td><?php echo$row['Warranty'];?></td>
-                <td><?php echo$row['Current State'];?></td>
-                <td><?php echo$row['Current Station'];?></td>
-                <td><?php echo$row['Current Meter reader'];?></td>
-                <td><?php echo$row['Staff ID'];?></td>
+                <td><?php echo$row['Current_State'];?></td>
+                <td><?php echo$row['Current_Station'];?></td>
+                <td><?php echo$row['Current_Meter_Reader'];?></td>
+                <td><?php echo$row['Staff_ID'];?></td>
 
                 
             </tr>

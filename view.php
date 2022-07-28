@@ -114,7 +114,7 @@ $result_count = mysqli_query(
 
 <br>
 
-<input type="text" name="find" size="50"  required>
+<input type="text" name="find" size="50" placeholder="Insert StaffID or name only"  required>
 <br>
 <br>
 <input type="submit" name="search" value="Search">
@@ -153,14 +153,14 @@ if ($result->num_rows > 0){
                 <td><?php echo$row['NSS'];?></td>
                 <td><?php echo$row['TC56'];?></td>
                 <td><?php echo$row['PO'];?></td>
-                <td><?php echo$row['Invoice No'];?></td>
-                <td><?php echo$row['Type Unit'];?></td>
-                <td><?php echo$row['Part No'];?></td>
+                <td><?php echo$row['Invoice_No'];?></td>
+                <td><?php echo$row['Type_Unit'];?></td>
+                <td><?php echo$row['Part_No'];?></td>
                 <td><?php echo$row['Warranty'];?></td>
                 <td><?php echo$row['State'];?></td>
                 <td><?php echo$row['Station'];?></td>
-                <td><?php echo$row['Meter Reader'];?></td>
-                <td><?php echo$row['Staff ID'];?></td>
+                <td><?php echo$row['Meter_Reader'];?></td>
+                <td><?php echo$row['Staff_ID'];?></td>
 
                 
             </tr>
