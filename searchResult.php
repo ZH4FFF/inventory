@@ -12,7 +12,7 @@ body {
   background-size: cover;
 	}
  </style>
-<body> <h2>Search Form </h2>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="view.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -55,7 +55,6 @@ else
     <br>
     <div class="container" style="overflow-x:auto;">
   <div class="row">
-    <h4 class="search">Search Result For : <?php echo $find?></h4>
     <br><br>
     <table id="example" class="table table-bordered" style="width:100%">
 <thead>
@@ -95,7 +94,7 @@ else
         </div>
         
         </table>
-        <button type="button" class="backbtn" onclick="history.back();" value="Back">Back</button>
+       
 
 
 
@@ -112,5 +111,7 @@ else
     }
     
 }
+?>
+<button type="button" class="backbtn" onclick="history.back();" value="Back">Back</button>
 
   

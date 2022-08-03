@@ -106,8 +106,24 @@ $result_count = mysqli_query(
 
 
 ?>
+<center>
+<h2> Search form </h2>
+<p> Please search your Serial Number: </p>
+
+<form name="searchRosak.php" action="searchRosak.php" method="POST">
+
+<br>
+
+<input type="text" name="find" size="50" placeholder="Insert StaffID or name only "  required>
+<br>
+<br>
+<input type="submit" name="search" value="Search">
+
+</form>
+
+</center>
 <div class="container" style="overflow-x:auto;">
-  <div class="row" style="overflow-x:auto;">
+  <div class="row">
   
 <table id="example" class="table table-bordered" style="width:100%">
 <thead>
@@ -118,11 +134,11 @@ $result_count = mysqli_query(
                 <th>Station</th>
                 <th>NSS Tag</th>
                 <th>Item</th>
-                <th>Seria Number Item</th>
+                <th>Serial Number Item</th>
                 <th>Battery Included</th>
                 <th>Damage</th>
+                <th>Call Vendor</th>
                 <th>Date of report accepted</th>
-                <th>Date of Vendor called</th>
                 <th>Date of vendor take</th>
                 <th>Date of vendor return</th>
                 <th>Days V</th>
@@ -145,11 +161,12 @@ if ($result->num_rows > 0){
                 <td><?php echo$row['NSS'];?></td>
                 <td><?php echo$row['State'];?></td>
                 <td><?php echo$row['Stesen'];?></td>
-                <td><?php echo$row['NSS Tag'];?></td>
+                <td><?php echo$row['NSS_Tag'];?></td>
                 <td><?php echo$row['Item'];?></td>
-                <td><?php echo$row['Serial Number Item'];?></td>
+                <td><?php echo$row['Serial_Number_Item'];?></td>
                 <td><?php echo$row['Batt Include'];?></td>
                 <td><?php echo$row['Kerosakan'];?></td>
+                <td><?php echo$row['Laporan Terima'];?></td>
                 <td><?php echo$row['Call Vendor'];?></td>
                 <td><?php echo$row['Vendor Ambil'];?></td>
                 <td><?php echo$row['Vendor Pulang'];?></td>
@@ -181,6 +198,7 @@ if ($result->num_rows > 0){
 
         </div>
         </div>
+        </table>
         
         <!-- Button untuk pagination -->
         <ul class="pagination">
