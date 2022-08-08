@@ -81,7 +81,7 @@ h4 {
   <body>
     <form action="welcome.php" method="POST">
       <div class="mb-3">
-        <label for="Name" class="form-label" required  style="color:white ">Name </label>
+        <label for="Name" class="form-label" required  style="color:white ">UserName </label>
         <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" name="name" />
       </div>
 
@@ -92,7 +92,7 @@ h4 {
 
       <div class="mb-3">
         <label for="Name" class="form-label"style="color:white ">Password</label>
-        <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" name="password" />
+        <input type="password" class="form-control" id="exampleInputName" aria-describedby="nameHelp" name="password" />
       </div>
 
       <div class="mb-3">

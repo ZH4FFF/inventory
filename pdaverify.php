@@ -29,7 +29,7 @@ $Staff_ID=$_POST['STAFF_ID'];
 
 
 <body>
-UserName:<?php echo $nss;?>
+NSS:<?php echo $nss;?>
 
 <br><br>
 
@@ -98,6 +98,12 @@ else
 }
 }
 $conn->close();
+echo "<button onclick='history.back()'>Go Back</button>";
+echo "<br>";
+echo "<br>";
+echo "<a href=menu.php> Menu</a>";
+echo "<br>";
+echo "<br>";
 echo "<a href=practice.html> Login </a>";
 ?>
 

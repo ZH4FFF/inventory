@@ -85,7 +85,7 @@ if($conn->connect_error)
 }
 else 
 {
-	$queryinsert="Insert into data_prt(NSS,ZQ520,PO,INVOICE_NO,TYPE_UNIT,ASSET_NO,PART_NO,WARRANTY,STATE,STATION,METER_READER,STAFF_ID)
+	$queryinsert="Insert into data_prt(NSS,ZQ520,PO,INVOICE_NO,TYPE_UNIT,ASSET_NO,PART_NO,WARRANTY,CURRENT_STATE,CURRENT_STATION,CURRENT_METER_READER,STAFF_ID)
 	values('".$nss."', '".$ZQ520."','".$po."', '".$Invoice_No."','".$Type_Unit."','".$ASSET_NO."','".$Part_NO."','".$Warranty."','".$State."','".$Station."','".$Meter_Reader."','".$Staff_ID."')";
 
 if($conn->query($queryinsert)==TRUE)
@@ -98,5 +98,11 @@ else
 }
 }
 $conn->close();
+echo "<button onclick='history.back()'>Go Back</button>";
+echo "<br>";
+echo "<br>";
+echo "<a href=menu.php> Menu</a>";
+echo "<br>";
+echo "<br>";
 echo "<a href=practice.html> Login </a>";
 ?>

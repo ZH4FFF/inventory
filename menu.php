@@ -167,7 +167,7 @@ if(isset($_SESSION["UID"])){
 <div class="topnav" id="myTopnav">
   <a href="" class="active">Home</a>
   <a href="insert.php">Add Record</a>
-  <a href="#contact">Edit Record</a>
+  <a href="editchoose.php">Edit Record</a>
   <div class="dropdown">
     <button class="dropbtn">View Records
       <i class="fa fa-caret-down"></i>
